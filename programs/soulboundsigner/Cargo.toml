@@ -1,0 +1,24 @@
+[package]
+name = "soulboundsigner"
+version = "0.1.0"
+description = "Sign transactions by holding a token in your smallet"
+repository = "https://github.com/CosmicWire/Sm_art--W_allet.git"
+authors = ["Mark Ellis <mark@cosmicwire.com>"]
+license = "MIT"
+edition = "2021"
+keywords = ["solana", "cosmic", "smallet", "anchor"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "soulboundsigner"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = ">=0.22, <=0.24"
+anchor-spl = ">=0.22, <=0.24"
+vipers = "^2.0"

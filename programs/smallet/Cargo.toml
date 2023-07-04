@@ -1,0 +1,22 @@
+[package]
+name = "smallet"
+version = "0.11.1"
+description = "Cosmic Sm(art)(w)allet"
+authors = ["Mark Ellis <mark@cosmicwire.com>"]
+license = "MIT"
+edition = "2021"
+keywords = ["cosmic", "smallet", "abstraction", "fust"] 
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "smallet"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = ">=0.22, <=0.24"
+vipers = "^2.0"

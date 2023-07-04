@@ -1,0 +1,27 @@
+anchor_version = "0.24.2"
+solana_version = "1.9.12"
+
+[features]
+seeds = true
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "./tests/test-key.json"
+
+[scripts]
+test = "yarn mocha -b"
+
+[programs.mainnet]
+smallet = "7vZw152zk65W5F59S6Svt29JjDhzZocWvF7PYvjNCAKB"
+
+[programs.devnet]
+smallet = "7vZw152zk65W5F59S6Svt29JjDhzZocWvF7PYvjNCAKB"
+
+[programs.testnet]
+smallet = "7vZw152zk65W5F59S6Svt29JjDhzZocWvF7PYvjNCAKB"
+
+[programs.localnet]
+smallet = "7vZw152zk65W5F59S6Svt29JjDhzZocWvF7PYvjNCAKB"
